@@ -265,7 +265,7 @@ def dice_throw_generator():
     Emulates the result of throwing a dice 62 times. 
     To generate cryptographically secure random numbers, we are using SystemRandom, which uses os.urandom()
     
-    More info: https://realpython.com/python-random/
+    More info: https://realpython.com/python-random/#osurandom-about-as-random-as-it-gets
     """
 
     throw = ""
