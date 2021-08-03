@@ -658,9 +658,9 @@ def deposit_interactive(m, n, dice_seed_length=62, rng_seed_length=20):
         dice_seed_string = read_dice_seed_interactive(dice_seed_length)
         dice_seed_hash = hash_sha256(dice_seed_string)
 
+        print("\nPlease enter a 40 char entropy or use this one randomly generated: ", entropies[index-1])
         #rng_seed_string = read_rng_seed_interactive(rng_seed_length)
-        rng_seed_string = entropies[index-1]
-        print("USED ENTROPY", index-1, "WHICH IS: ", entropies[index-1])
+        rng_seed_string = input()
         rng_seed_hash = hash_sha256(rng_seed_string)
 
         # back to hex string
